@@ -4,21 +4,21 @@ postgres:
     staging:
       type: postgres
       threads: 1
-      host: localhost
+      host: 127.0.0.1
       port: 5434
       user: postgres
-      pass: pepe
-      dbname: brava_staging
+      pass: postgres
+      dbname: postgres
       schema: staging_schema
 
     staging2:
       type: postgres
       threads: 1
-      host: localhost
+      host: 127.0.0.1
       port: 5434
       user: postgres
-      pass: pepe
-      dbname: brava_staging
+      pass: postgres
+      dbname: postgres
       schema: public
 
   target: staging2
