@@ -6,4 +6,4 @@
 2. Ejecutar staging.sql en la base de staging
 3. Ejecutar dag dev_to_staging
 4. Ejecutar dag staging_to_dw
-5. Rezar porque funcione
+5. Rezar porque funcione 🙏
