@@ -21,4 +21,4 @@ postgres:
       dbname: postgres
       schema: public
 
-  target: staging2
+  target: staging
