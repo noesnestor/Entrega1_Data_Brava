@@ -1,1 +1,5 @@
-./airflow/logs
+.DS_Store
+airflow/dags/__pycache__
+airflow/logs
+airflow/dbt/logs
+airflow/dbt/target
