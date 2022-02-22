@@ -1,0 +1,164 @@
+[2022-02-22 00:00:13,314] {processor.py:163} INFO - Started process (PID=1053) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:00:13,329] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 00:00:13,338] {logging_mixin.py:109} INFO - [2022-02-22 00:00:13,334] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:00:13,586] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:00:13,723] {logging_mixin.py:109} INFO - [2022-02-22 00:00:13,723] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 00:00:13,911] {logging_mixin.py:109} INFO - [2022-02-22 00:00:13,911] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 00:00:14,012] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 0.716 seconds
+[2022-02-22 00:00:44,304] {processor.py:163} INFO - Started process (PID=1095) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:00:44,307] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 00:00:44,326] {logging_mixin.py:109} INFO - [2022-02-22 00:00:44,326] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:00:44,552] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:00:44,633] {logging_mixin.py:109} INFO - [2022-02-22 00:00:44,633] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 00:00:44,791] {logging_mixin.py:109} INFO - [2022-02-22 00:00:44,791] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 00:00:44,834] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 0.535 seconds
+[2022-02-22 00:01:15,496] {processor.py:163} INFO - Started process (PID=1149) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:01:15,499] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 00:01:15,501] {logging_mixin.py:109} INFO - [2022-02-22 00:01:15,501] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:01:15,548] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:01:15,562] {logging_mixin.py:109} INFO - [2022-02-22 00:01:15,562] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 00:01:15,581] {logging_mixin.py:109} INFO - [2022-02-22 00:01:15,581] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 00:01:15,600] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 0.114 seconds
+[2022-02-22 00:01:46,027] {processor.py:163} INFO - Started process (PID=1201) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:01:46,032] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 00:01:46,035] {logging_mixin.py:109} INFO - [2022-02-22 00:01:46,035] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:01:46,096] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:01:46,128] {logging_mixin.py:109} INFO - [2022-02-22 00:01:46,128] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 00:01:46,150] {logging_mixin.py:109} INFO - [2022-02-22 00:01:46,150] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 00:01:46,161] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 0.145 seconds
+[2022-02-22 00:02:16,714] {processor.py:163} INFO - Started process (PID=1253) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:02:16,727] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 00:02:16,742] {logging_mixin.py:109} INFO - [2022-02-22 00:02:16,742] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:02:16,861] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:02:16,878] {logging_mixin.py:109} INFO - [2022-02-22 00:02:16,878] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 00:02:16,904] {logging_mixin.py:109} INFO - [2022-02-22 00:02:16,904] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 00:02:16,924] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 0.222 seconds
+[2022-02-22 00:02:47,325] {processor.py:163} INFO - Started process (PID=1308) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:02:47,336] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 00:02:47,339] {logging_mixin.py:109} INFO - [2022-02-22 00:02:47,338] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:02:47,395] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:02:47,422] {logging_mixin.py:109} INFO - [2022-02-22 00:02:47,422] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 00:02:47,445] {logging_mixin.py:109} INFO - [2022-02-22 00:02:47,445] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 00:02:47,475] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 0.165 seconds
+[2022-02-22 00:03:17,752] {processor.py:163} INFO - Started process (PID=1362) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:03:17,756] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 00:03:17,758] {logging_mixin.py:109} INFO - [2022-02-22 00:03:17,758] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:03:17,850] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:03:17,895] {logging_mixin.py:109} INFO - [2022-02-22 00:03:17,889] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 00:03:17,988] {logging_mixin.py:109} INFO - [2022-02-22 00:03:17,987] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 00:03:18,030] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 0.285 seconds
+[2022-02-22 00:03:48,284] {processor.py:163} INFO - Started process (PID=1401) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:03:48,288] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 00:03:48,296] {logging_mixin.py:109} INFO - [2022-02-22 00:03:48,295] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:03:48,474] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:03:48,558] {logging_mixin.py:109} INFO - [2022-02-22 00:03:48,558] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 00:03:48,709] {logging_mixin.py:109} INFO - [2022-02-22 00:03:48,709] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 00:03:48,792] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 0.531 seconds
+[2022-02-22 00:04:31,603] {processor.py:163} INFO - Started process (PID=1429) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:04:31,713] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 00:04:31,720] {logging_mixin.py:109} INFO - [2022-02-22 00:04:31,719] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:04:32,373] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:04:32,436] {logging_mixin.py:109} INFO - [2022-02-22 00:04:32,421] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 00:04:33,015] {logging_mixin.py:109} INFO - [2022-02-22 00:04:33,014] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 00:04:33,215] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 1.737 seconds
+[2022-02-22 00:09:10,356] {processor.py:163} INFO - Started process (PID=1450) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:09:10,402] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 00:09:10,421] {logging_mixin.py:109} INFO - [2022-02-22 00:09:10,421] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:09:10,804] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:09:11,019] {logging_mixin.py:109} INFO - [2022-02-22 00:09:11,019] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 00:09:11,326] {logging_mixin.py:109} INFO - [2022-02-22 00:09:11,326] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 00:09:11,467] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 1.217 seconds
+[2022-02-22 00:24:07,424] {processor.py:163} INFO - Started process (PID=1465) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:24:07,444] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 00:24:07,489] {logging_mixin.py:109} INFO - [2022-02-22 00:24:07,486] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:24:07,838] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:24:08,002] {logging_mixin.py:109} INFO - [2022-02-22 00:24:08,002] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 00:24:08,291] {logging_mixin.py:109} INFO - [2022-02-22 00:24:08,291] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 00:24:08,406] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 1.022 seconds
+[2022-02-22 00:39:09,172] {processor.py:163} INFO - Started process (PID=1480) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:39:09,197] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 00:39:09,207] {logging_mixin.py:109} INFO - [2022-02-22 00:39:09,207] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:39:09,544] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:39:09,670] {logging_mixin.py:109} INFO - [2022-02-22 00:39:09,670] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 00:39:09,885] {logging_mixin.py:109} INFO - [2022-02-22 00:39:09,885] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 00:39:10,004] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 0.860 seconds
+[2022-02-22 00:46:10,345] {processor.py:163} INFO - Started process (PID=1496) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:46:10,361] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 00:46:10,384] {logging_mixin.py:109} INFO - [2022-02-22 00:46:10,384] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:46:10,733] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 00:46:10,855] {logging_mixin.py:109} INFO - [2022-02-22 00:46:10,855] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 00:46:11,215] {logging_mixin.py:109} INFO - [2022-02-22 00:46:11,214] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 00:46:11,444] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 1.149 seconds
+[2022-02-22 02:47:20,818] {processor.py:163} INFO - Started process (PID=1503) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 02:47:20,915] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 02:47:21,687] {logging_mixin.py:109} INFO - [2022-02-22 02:47:21,686] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 03:47:13,730] {processor.py:163} INFO - Started process (PID=1513) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 03:47:13,848] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 03:47:13,886] {logging_mixin.py:109} INFO - [2022-02-22 03:47:13,885] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 03:47:16,589] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 03:47:17,040] {logging_mixin.py:109} INFO - [2022-02-22 03:47:17,040] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 03:47:17,527] {logging_mixin.py:109} INFO - [2022-02-22 03:47:17,511] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 03:47:17,671] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 4.019 seconds
+[2022-02-22 03:47:52,769] {processor.py:163} INFO - Started process (PID=1567) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 03:47:52,772] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 03:47:52,790] {logging_mixin.py:109} INFO - [2022-02-22 03:47:52,789] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 03:47:53,009] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 03:47:53,099] {logging_mixin.py:109} INFO - [2022-02-22 03:47:53,099] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 03:47:53,226] {logging_mixin.py:109} INFO - [2022-02-22 03:47:53,226] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 03:47:53,303] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 0.573 seconds
+[2022-02-22 03:48:23,431] {processor.py:163} INFO - Started process (PID=1617) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 03:48:23,454] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 03:48:23,457] {logging_mixin.py:109} INFO - [2022-02-22 03:48:23,457] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 03:48:23,562] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 03:48:23,604] {logging_mixin.py:109} INFO - [2022-02-22 03:48:23,604] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 03:48:23,672] {logging_mixin.py:109} INFO - [2022-02-22 03:48:23,672] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 03:48:23,730] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 0.311 seconds
+[2022-02-22 03:48:54,127] {processor.py:163} INFO - Started process (PID=1671) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 03:48:54,129] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 03:48:54,137] {logging_mixin.py:109} INFO - [2022-02-22 03:48:54,137] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 03:48:54,239] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 03:48:54,271] {logging_mixin.py:109} INFO - [2022-02-22 03:48:54,271] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 03:48:54,366] {logging_mixin.py:109} INFO - [2022-02-22 03:48:54,366] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 03:48:54,409] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 0.289 seconds
+[2022-02-22 05:49:25,758] {processor.py:163} INFO - Started process (PID=1708) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 05:49:25,794] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 05:49:25,819] {logging_mixin.py:109} INFO - [2022-02-22 05:49:25,819] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 05:49:26,654] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 05:49:26,738] {logging_mixin.py:109} INFO - [2022-02-22 05:49:26,736] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 05:49:26,928] {logging_mixin.py:109} INFO - [2022-02-22 05:49:26,928] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 05:49:27,018] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 1.285 seconds
+[2022-02-22 07:49:50,245] {processor.py:163} INFO - Started process (PID=1726) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 07:49:50,256] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 07:49:50,292] {logging_mixin.py:109} INFO - [2022-02-22 07:49:50,265] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 07:49:50,603] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 07:49:50,739] {logging_mixin.py:109} INFO - [2022-02-22 07:49:50,739] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 07:49:50,983] {logging_mixin.py:109} INFO - [2022-02-22 07:49:50,957] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 07:49:51,102] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 0.910 seconds
+[2022-02-22 09:50:09,948] {processor.py:163} INFO - Started process (PID=1745) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 09:50:09,954] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 09:50:09,970] {logging_mixin.py:109} INFO - [2022-02-22 09:50:09,970] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 09:50:10,728] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 09:50:10,871] {logging_mixin.py:109} INFO - [2022-02-22 09:50:10,868] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 09:50:11,122] {logging_mixin.py:109} INFO - [2022-02-22 09:50:11,122] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 09:50:11,215] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 1.368 seconds
+[2022-02-22 13:01:56,614] {processor.py:163} INFO - Started process (PID=1775) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 13:01:56,639] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 13:01:56,695] {logging_mixin.py:109} INFO - [2022-02-22 13:01:56,695] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 13:01:59,522] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 13:02:01,037] {logging_mixin.py:109} INFO - [2022-02-22 13:02:01,036] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 13:02:02,771] {logging_mixin.py:109} INFO - [2022-02-22 13:02:02,770] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 13:02:03,148] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 6.742 seconds
+[2022-02-22 13:03:32,772] {processor.py:163} INFO - Started process (PID=1816) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 13:03:32,949] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 13:03:33,239] {logging_mixin.py:109} INFO - [2022-02-22 13:03:33,239] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 13:03:35,742] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 13:03:36,973] {logging_mixin.py:109} INFO - [2022-02-22 13:03:36,973] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 13:03:40,059] {logging_mixin.py:109} INFO - [2022-02-22 13:03:40,058] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 13:03:41,041] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 9.895 seconds
+[2022-02-22 13:06:00,743] {processor.py:163} INFO - Started process (PID=1910) to work on /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 13:06:00,814] {processor.py:642} INFO - Processing file /opt/airflow/dags/staging_to_dw.py for tasks to queue
+[2022-02-22 13:06:00,944] {logging_mixin.py:109} INFO - [2022-02-22 13:06:00,943] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 13:06:02,367] {processor.py:654} INFO - DAG(s) dict_keys(['staging_to_dw']) retrieved from /opt/airflow/dags/staging_to_dw.py
+[2022-02-22 13:06:03,776] {logging_mixin.py:109} INFO - [2022-02-22 13:06:03,776] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-22 13:06:06,113] {logging_mixin.py:109} INFO - [2022-02-22 13:06:05,999] {dag.py:2935} INFO - Setting next_dagrun for staging_to_dw to 2022-02-22T00:00:00+00:00
+[2022-02-22 13:06:09,074] {processor.py:171} INFO - Processing /opt/airflow/dags/staging_to_dw.py took 8.940 seconds

@@ -1,0 +1,77 @@
+[2022-02-21 23:52:44,653] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: execute_bi_load.dev_to_staging scheduled__2020-02-02T00:00:00+00:00 [queued]>
+[2022-02-21 23:52:44,732] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: execute_bi_load.dev_to_staging scheduled__2020-02-02T00:00:00+00:00 [queued]>
+[2022-02-21 23:52:44,739] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-21 23:52:44,742] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-02-21 23:52:44,748] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-21 23:52:44,836] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): dev_to_staging> on 2020-02-02 00:00:00+00:00
+[2022-02-21 23:52:44,860] {standard_task_runner.py:52} INFO - Started process 183 to run task
+[2022-02-21 23:52:44,970] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'execute_bi_load', 'dev_to_staging', 'scheduled__2020-02-02T00:00:00+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/execute_bi_load.py', '--cfg-path', '/tmp/tmp6pbnm7hh', '--error-file', '/tmp/tmp1ux5rf7l']
+[2022-02-21 23:52:44,972] {standard_task_runner.py:77} INFO - Job 59: Subtask dev_to_staging
+[2022-02-21 23:52:45,315] {logging_mixin.py:109} INFO - Running <TaskInstance: execute_bi_load.dev_to_staging scheduled__2020-02-02T00:00:00+00:00 [running]> on host f20dafecb7fa
+[2022-02-21 23:52:45,396] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=execute_bi_load
+AIRFLOW_CTX_TASK_ID=dev_to_staging
+AIRFLOW_CTX_EXECUTION_DATE=2020-02-02T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-02-02T00:00:00+00:00
+[2022-02-21 23:52:45,422] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/execute_bi_load.py", line 16, in copy_to_staging
+    pg_dev_hook = PostgresHook.get_hook(POSTGRES_DEV_CONN_ID)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/base.py", line 93, in get_hook
+    connection = cls.get_connection(conn_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/base.py", line 68, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 410, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `dev` isn't defined
+[2022-02-21 23:52:45,433] {taskinstance.py:1277} INFO - Marking task as FAILED. dag_id=execute_bi_load, task_id=dev_to_staging, execution_date=20200202T000000, start_date=20220221T235244, end_date=20220221T235245
+[2022-02-21 23:52:45,453] {standard_task_runner.py:92} ERROR - Failed to execute job 59 for task dev_to_staging
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/execute_bi_load.py", line 16, in copy_to_staging
+    pg_dev_hook = PostgresHook.get_hook(POSTGRES_DEV_CONN_ID)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/base.py", line 93, in get_hook
+    connection = cls.get_connection(conn_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/base.py", line 68, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 410, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `dev` isn't defined
+[2022-02-21 23:52:45,509] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-02-21 23:52:45,592] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

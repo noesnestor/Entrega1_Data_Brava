@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: postgres_table
+    description: 'Obtiene los datos de una tabla existente en staging y lo clona a datawarehouse'
+    database: postgres
+    schema: staging_schema  
+    tables:
+      - name: users
+        description: 'La tabla pasada por pipeline'
