@@ -20,7 +20,7 @@ def copy_to_staging(table, temp_file_name):
     pg_dev_hook.bulk_dump(table, temp_file_name)
 
     logging.info("Importing table: '%s' from file: '%s'", table, temp_file_name)
-    pg_staging_hook.bulk_load(table, temp_file_name)
+    pg_staging_hook.bulk_load("staging_schema."+table, temp_file_name)
 
 
 with DAG(
