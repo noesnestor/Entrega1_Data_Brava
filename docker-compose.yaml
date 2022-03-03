@@ -80,39 +80,7 @@ services:
       - "5050:80"
     restart: always
     links:
-      - "postgres-dev"
-      - "postgres-staging"
       - "postgres-dw"
-
-  postgres-dev:
-    image: postgres
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: postgres
-    volumes:
-      - postgres-dev-db-volume:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD", "pg_isready", "-U", "postgres"]
-      interval: 5s
-      retries: 5
-    restart: always
-
-  postgres-staging:
-    image: postgres
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: postgres
-    ports:
-      - "5434:5432"
-    volumes:
-      - postgres-staging-db-volume:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD", "pg_isready", "-U", "postgres"]
-      interval: 5s
-      retries: 5
-    restart: always
 
   postgres-dw:
     image: postgres
@@ -169,8 +137,6 @@ services:
       airflow-init:
         condition: service_completed_successfully
     links:
-      - "postgres-dev"
-      - "postgres-staging"
       - "postgres-dw"
 
   airflow-scheduler:
@@ -187,8 +153,6 @@ services:
       airflow-init:
         condition: service_completed_successfully
     links:
-      - "postgres-dev"
-      - "postgres-staging"
       - "postgres-dw"
 
   airflow-worker:
@@ -212,8 +176,6 @@ services:
       airflow-init:
         condition: service_completed_successfully
     links:
-      - "postgres-dev"
-      - "postgres-staging"
       - "postgres-dw"
 
   airflow-triggerer:
@@ -230,8 +192,6 @@ services:
       airflow-init:
         condition: service_completed_successfully
     links:
-      - "postgres-dev"
-      - "postgres-staging"
       - "postgres-dw"
 
   airflow-init:
