@@ -302,6 +302,4 @@ services:
 
 volumes:
   postgres-db-volume:
-  postgres-dev-db-volume:
-  postgres-staging-db-volume:
   postgres-dw-db-volume:
