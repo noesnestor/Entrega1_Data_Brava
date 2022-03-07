@@ -69,7 +69,8 @@ usuario as
     select 
     id as id_usuario,
     id_empresa_id as id_empresa,
-    id_encuesta_id as id_encuesta
+    id_encuesta_id as id_encuesta,
+    rol_id as id_rol
     
     from {{ source('staging2','polls_usuario') }}
 ),
