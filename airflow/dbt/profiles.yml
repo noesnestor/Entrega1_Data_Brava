@@ -8,6 +8,6 @@ postgres:
       user: postgres
       pass: postgres
       dbname: postgres
-      schema: dw
+      schema: staging
 
   target: dw
