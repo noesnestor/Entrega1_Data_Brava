@@ -8,7 +8,7 @@ with respuesta as
     id_usuario_id as id_usuario,
     id_pregunta_id as id_pregunta,
 
-    from {{ source('staging','polls_respuesta') }}
+    from {{ source('staging2','polls_respuesta') }}
 ),
 
 empresa as
@@ -18,7 +18,7 @@ empresa as
     rubro_id as id_rubro,
     ceo_id as id_ceo
     
-    from {{ source('staging','polls_empresa') }}
+    from {{ source('staging2','polls_empresa') }}
 ),
 
 encuesta as
@@ -27,7 +27,7 @@ encuesta as
     id as id_encuesta,
     tipo_encuesta_id as id_tipo_encuesta
     
-    from {{ source('staging','polls_encuesta') }}
+    from {{ source('staging2','polls_encuesta') }}
 ),
 
 opcionesrespuesta as
@@ -36,7 +36,7 @@ opcionesrespuesta as
     id as id_opcionesrespuesta,
     id_pregunta_id as id_pregunta
 
-    from {{ source('staging','polls_opcionesrespuesta') }}
+    from {{ source('staging2','polls_opcionesrespuesta') }}
 ),
 
 pregunta as
@@ -46,22 +46,22 @@ pregunta as
     id_encuesta_id as id_encuesta,
     tipo_pregunta_id as id_tipo_pregunta 
     
-    from {{ source('staging','polls_pregunta') }}
+    from {{ source('staging2','polls_pregunta') }}
 ),
 
 rol as
 (
-    select id as id_rol from {{ source('staging','polls_rol') }}
+    select id as id_rol from {{ source('staging2','polls_rol') }}
 ),
 
 tipoencuesta as
 (
-    select id as id_tipo_encuesta from {{ source('staging','polls_tipoencuesta') }}
+    select id as id_tipo_encuesta from {{ source('staging2','polls_tipoencuesta') }}
 ),
 
 tipopregunta as 
 (
-    select id as id_tipo_pregunta from {{ source('staging','polls_tipopregunta') }}
+    select id as id_tipo_pregunta from {{ source('staging2','polls_tipopregunta') }}
 ),
 
 usuario as
@@ -72,7 +72,7 @@ usuario as
     id_encuesta_id as id_encuesta,
 
     
-    from {{ source('staging','polls_usuario') }}
+    from {{ source('staging2','polls_usuario') }}
 ),
 
 parte1 as
