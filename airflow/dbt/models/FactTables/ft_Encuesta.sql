@@ -87,7 +87,7 @@ parte1 as
 parte2 as
 /* Joinear la tabla respuesta con la tabla de usuario, esto obtiene empresa, rol y encuesta, con la última id siendo la que utilizaremos para el último join*/
 (
-    select res.id_respuesta, res.respuesta, res.id_encuesta, user.id_usuario, user.id_empresa, user.id_rol, user.id_encuesta
+    select res.id_respuesta, res.respuesta, user.id_encuesta, user.id_usuario, user.id_empresa, user.id_rol, user.id_encuesta
     from respuesta as res
     inner join usuario as user
     on res.id_usuario = user.id_usuario
