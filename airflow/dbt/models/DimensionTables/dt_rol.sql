@@ -1,13 +1,10 @@
-{{ config(materialized='table', unlogged=True) }}
-
-with source_table as 
+with rol as
 (
-    select * from {{ source('staging', 'polls_rol') }}
-),
+    select
+    id,
+    nombre_rol
 
-final as
-(
-    select id, nombre_rol from source_table
+    from {{ source('staging','polls_rol') }}
 )
 
-select * from final
+select * from rol

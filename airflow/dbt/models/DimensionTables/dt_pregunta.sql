@@ -1,13 +1,11 @@
-{{ config(materialized='table', unlogged=True) }}
-
-with source_table as 
+with pregunta as
 (
-    select * from {{ source('staging', 'polls_pregunta') }}
-),
+    select
+    id,
+    texto
 
-final as
-(
-    select id, texto, id_encuesta, tipo_pregunta_id from source_table
+    from {{ source('staging','polls_pregunta') }}
 )
 
-select * from final
+select * from pregunta
+
