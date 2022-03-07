@@ -53,70 +53,6 @@ CREATE SEQUENCE IF NOT EXISTS staging.auth_permission_id_seq
 
 ALTER SEQUENCE staging.auth_permission_id_seq OWNED BY staging.auth_permission.id;
 
-CREATE TABLE IF NOT EXISTS staging.django_admin_log (
-    id integer NOT NULL,
-    action_time timestamp with time zone NOT NULL,
-    object_id text,
-    object_repr character varying(200) NOT NULL,
-    action_flag smallint NOT NULL,
-    change_message text NOT NULL,
-    content_type_id integer,
-    user_id bigint NOT NULL,
-    CONSTRAINT django_admin_log_action_flag_check CHECK ((action_flag >= 0))
-);
-
-CREATE SEQUENCE IF NOT EXISTS staging.django_admin_log_id_seq
-    AS integer
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
-ALTER SEQUENCE staging.django_admin_log_id_seq OWNED BY staging.django_admin_log.id;
-
-CREATE TABLE IF NOT EXISTS staging.django_content_type (
-    id integer NOT NULL,
-    app_label character varying(100) NOT NULL,
-    model character varying(100) NOT NULL
-);
-
-CREATE SEQUENCE IF NOT EXISTS staging.django_content_type_id_seq
-    AS integer
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-ALTER SEQUENCE staging.django_content_type_id_seq OWNED BY staging.django_content_type.id;
-
-CREATE TABLE IF NOT EXISTS staging.django_migrations (
-    id bigint NOT NULL,
-    app character varying(255) NOT NULL,
-    name character varying(255) NOT NULL,
-    applied timestamp with time zone NOT NULL
-);
-
-CREATE SEQUENCE IF NOT EXISTS staging.django_migrations_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
-ALTER SEQUENCE staging.django_migrations_id_seq OWNED BY staging.django_migrations.id;
-
-
-CREATE TABLE IF NOT EXISTS staging.django_session (
-    session_key character varying(40) NOT NULL,
-    session_data text NOT NULL,
-    expire_date timestamp with time zone NOT NULL
-);
-
-
 CREATE TABLE IF NOT EXISTS staging.polls_empresa (
     id bigint NOT NULL,
     created timestamp with time zone NOT NULL,
@@ -402,9 +338,6 @@ ALTER SEQUENCE staging.polls_usuario_user_permissions_id_seq OWNED BY staging.po
 ALTER TABLE ONLY staging.auth_group ALTER COLUMN id SET DEFAULT nextval('staging.auth_group_id_seq'::regclass);
 ALTER TABLE ONLY staging.auth_group_permissions ALTER COLUMN id SET DEFAULT nextval('staging.auth_group_permissions_id_seq'::regclass);
 ALTER TABLE ONLY staging.auth_permission ALTER COLUMN id SET DEFAULT nextval('staging.auth_permission_id_seq'::regclass);
-ALTER TABLE ONLY staging.django_admin_log ALTER COLUMN id SET DEFAULT nextval('staging.django_admin_log_id_seq'::regclass);
-ALTER TABLE ONLY staging.django_content_type ALTER COLUMN id SET DEFAULT nextval('staging.django_content_type_id_seq'::regclass);
-ALTER TABLE ONLY staging.django_migrations ALTER COLUMN id SET DEFAULT nextval('staging.django_migrations_id_seq'::regclass);
 ALTER TABLE ONLY staging.polls_empresa ALTER COLUMN id SET DEFAULT nextval('staging.polls_empresa_id_seq'::regclass);
 ALTER TABLE ONLY staging.polls_encuesta ALTER COLUMN id SET DEFAULT nextval('staging.polls_encuesta_id_seq'::regclass);
 ALTER TABLE ONLY staging.polls_opcionesrespuesta ALTER COLUMN id SET DEFAULT nextval('staging.polls_opcionesrespuesta_id_seq'::regclass);
@@ -435,21 +368,6 @@ ALTER TABLE ONLY staging.auth_permission
 
 ALTER TABLE ONLY staging.auth_permission
     ADD CONSTRAINT auth_permission_pkey PRIMARY KEY (id);
-
-ALTER TABLE ONLY staging.django_admin_log
-    ADD CONSTRAINT django_admin_log_pkey PRIMARY KEY (id);
-
-ALTER TABLE ONLY staging.django_content_type
-    ADD CONSTRAINT django_content_type_app_label_model_76bd3d3b_uniq UNIQUE (app_label, model);
-
-ALTER TABLE ONLY staging.django_content_type
-    ADD CONSTRAINT django_content_type_pkey PRIMARY KEY (id);
-
-ALTER TABLE ONLY staging.django_migrations
-    ADD CONSTRAINT django_migrations_pkey PRIMARY KEY (id);
-
-ALTER TABLE ONLY staging.django_session
-    ADD CONSTRAINT django_session_pkey PRIMARY KEY (session_key);
 
 ALTER TABLE ONLY staging.polls_empresa
     ADD CONSTRAINT polls_empresa_pkey PRIMARY KEY (id);
