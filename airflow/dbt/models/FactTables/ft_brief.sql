@@ -6,7 +6,7 @@ with respuesta as
     id as id_respuesta,
     respuesta,
     id_usuario_id as id_usuario,
-    id_pregunta_id as id_pregunta,
+    id_pregunta_id as id_pregunta
 
     from {{ source('staging2','polls_respuesta') }}
 ),
@@ -69,8 +69,7 @@ usuario as
     select 
     id as id_usuario,
     id_empresa_id as id_empresa,
-    id_encuesta_id as id_encuesta,
-
+    id_encuesta_id as id_encuesta
     
     from {{ source('staging2','polls_usuario') }}
 ),
