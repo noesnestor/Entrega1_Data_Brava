@@ -9,6 +9,7 @@ with respuesta as
     id_pregunta_id as id_pregunta,
 
     from {{ source('staging','polls_respuesta') }}
+),
 
 empresa as
 (
