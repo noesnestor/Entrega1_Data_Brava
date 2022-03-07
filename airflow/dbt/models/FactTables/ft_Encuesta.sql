@@ -109,7 +109,7 @@ parte4 as
     from parte3 as p3
     inner join parte1 as p1
     on p3.id_encuesta = p1.id_encuesta
-)
+),
 
 /* hacer que se seleccione únicamente las id que correspondan al tipo_encuesta "encuesta" */
 final as
