@@ -5,6 +5,7 @@ with respuesta as
     select 
     id as id_respuesta,
     respuesta as texto_respuesta,
+    created as fecha,
     id_usuario_id as id_usuario,
     id_pregunta_id as id_pregunta
 
@@ -87,7 +88,7 @@ opcionesrespuesta_pregunta as
 respuesta_usuario as
 /* Joinear la tabla respuesta con la tabla de usuario, esto obtiene empresa, rol y encuesta, con la última id siendo la que utilizaremos para el último join*/
 (
-    select res.id_respuesta, res.texto_respuesta, us.id_encuesta, us.id_usuario, us.id_empresa, us.id_rol
+    select res.id_respuesta, res.texto_respuesta, res.fecha, us.id_encuesta, us.id_usuario, us.id_empresa, us.id_rol
     from respuesta as res
     inner join usuario as us
     on res.id_usuario = us.id_usuario
