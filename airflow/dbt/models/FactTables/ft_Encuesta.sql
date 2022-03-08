@@ -96,7 +96,7 @@ parte2 as
 parte3 as
 /* Joinear encuesta con la segunda tabla, para obtener una tabla que tiene el id del tipo de encuesta. Necesitamos este dato para ver como separaremos las fact tables.*/
 (
-    select p2.id_respuesta, p2.texto_respuesta, poll.id_encuesta, p2.id_usuario, p2.id_empresa, p2.id_rol, poll.id_tipo_encuesta
+    select p2.*, poll.id_tipo_encuesta
     from parte2 as p2
     inner join encuesta as poll
     on p2.id_encuesta = poll.id_encuesta
@@ -105,7 +105,7 @@ parte3 as
 parte4 as
 /* Joinear la primera tabla con la tercera en pos de tener una tabla con todos los datos */
 (
-    select * 
+    select p3.*, p1.id_opcionesrespuesta, p1.id_pregunta, p1.id_tipo_pregunta
     from parte3 as p3
     inner join parte1 as p1
     on p3.id_encuesta = p1.id_encuesta
