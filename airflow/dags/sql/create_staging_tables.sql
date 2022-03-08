@@ -145,9 +145,10 @@ CREATE TABLE IF NOT EXISTS staging.polls_pregunta (
     id bigint NOT NULL,
     created timestamp with time zone NOT NULL,
     removed timestamp with time zone,
-    texto character varying(100) NOT NULL,
+    texto character varying(500) NOT NULL,
     id_encuesta_id bigint,
-    tipo_pregunta_id bigint
+    tipo_pregunta_id bigint,
+    dimension character varying(150)
 );
 
 

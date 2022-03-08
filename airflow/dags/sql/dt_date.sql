@@ -1,3 +1,5 @@
+drop table dw.dt_date;
+
 create table dw.dt_date (
 date_key int not null,
 full_date text,
