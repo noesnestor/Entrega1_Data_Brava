@@ -2,7 +2,6 @@ with encuesta as
 (
     select
     id,
-    esta_completada,
     fecha_limite,
     titulo
     
