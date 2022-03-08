@@ -94,7 +94,7 @@ parte2 as
 ),
 
 parte3 as
-/* Joinear encuesta con la segunda tabla, para obtener una tabla que tiene el id del tipo de encuesta. Necesitamos este dato para ver como separaremos las fact tables.*/
+/* Joinear la tabla_encuesta con la segunda tabla, para obtener una tabla que tiene el id del tipo de encuesta. Necesitamos este dato para ver como separaremos las fact tables.*/
 (
     select p2.*, poll.id_tipo_encuesta
     from parte2 as p2
