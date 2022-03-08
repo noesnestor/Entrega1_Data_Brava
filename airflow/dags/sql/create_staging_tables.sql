@@ -91,12 +91,10 @@ CREATE TABLE IF NOT EXISTS staging.polls_encuesta (
     id bigint NOT NULL,
     created timestamp with time zone NOT NULL,
     removed timestamp with time zone,
-    esta_completada boolean NOT NULL,
     fecha_limite timestamp with time zone NOT NULL,
     titulo character varying(20) NOT NULL,
     tipo_encuesta_id bigint
 );
-
 
 
 
@@ -290,6 +288,8 @@ CREATE TABLE IF NOT EXISTS staging.polls_usuario (
     is_staff boolean NOT NULL,
     is_active boolean NOT NULL,
     date_joined timestamp with time zone NOT NULL,
+    encuesta_completada boolean NOT NULL,
+    removed timestamp with time zone,
     id_empresa_id bigint,
     id_encuesta_id bigint,
     rol_id bigint
