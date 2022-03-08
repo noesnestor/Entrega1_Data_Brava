@@ -32,9 +32,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
-  DimensionTables:
-    +materialized: table
-    +schema: dw
-  FactTables:
-    +materialized: table
-    +schema: dw
+  reto1:
+    DimensionTables:
+      +materialized: table
+    FactTables:
+      +materialized: table

@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: staging2
+    description: 'Obtiene los datos de la DB staging'
+    database: postgres
+    schema: staging 
+    tables:
+      - name: polls_empresa
+      - name: polls_encuesta
+      - name: polls_opcionesrespuesta
+      - name: polls_pregunta
+      - name: polls_respuesta
+      - name: polls_rol
+      - name: polls_rubro
+      - name: polls_tipoencuesta
+      - name: polls_tipopregunta
+      - name: polls_usuario
