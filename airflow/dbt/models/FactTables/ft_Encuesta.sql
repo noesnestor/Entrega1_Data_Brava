@@ -5,7 +5,7 @@ with respuesta as
     select 
     id as id_respuesta,
     respuesta as texto_respuesta,
-    created as fecha,
+    to_char(created, 'yyyyMMdd') as fecha,
     id_usuario_id as id_usuario,
     id_pregunta_id as id_pregunta
 
