@@ -35,7 +35,5 @@ models:
   reto1:
     DimensionTables:
       +materialized: table
-      +schema: dw
     FactTables:
       +materialized: table
-      +schema: dw
