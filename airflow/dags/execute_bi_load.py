@@ -58,7 +58,13 @@ with DAG(
         dag=dag
     )
 
-    create_staging_tables >> dev_to_staging >> staging_to_dw
+    add_dt_date = PostgresOperator(
+        task_id="add_dt_date",
+        postgres_conn_id=POSTGRES_STAGING_CONN_ID,
+        sql="sql/dt_date.sql",
+    )
+
+    create_staging_tables >> dev_to_staging >> staging_to_dw >> add_dt_date
     
     
     
