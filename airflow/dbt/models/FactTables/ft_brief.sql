@@ -115,7 +115,7 @@ respuesta_usuario_encuesta_opcionesrespuesta_pregunta as
 /* hacer que se seleccione únicamente las id que correspondan al tipo_encuesta "brief" */
 final as
 (
-    select * from respuesta_usuario_encuesta_opcionesrespuesta_pregunta where respuesta_usuario_encuesta_opcionesrespuesta_pregunta.id_tipo_encuesta = 1
+    select * from respuesta_usuario_encuesta_opcionesrespuesta_pregunta where respuesta_usuario_encuesta_opcionesrespuesta_pregunta.id_tipo_encuesta = 2
 )
 
 select * from final
