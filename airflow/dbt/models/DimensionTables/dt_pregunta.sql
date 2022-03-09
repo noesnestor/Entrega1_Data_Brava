@@ -2,7 +2,8 @@ with pregunta as
 (
     select
     id,
-    texto
+    texto,
+    dimension
 
     from {{ source('staging','polls_pregunta') }}
 )
