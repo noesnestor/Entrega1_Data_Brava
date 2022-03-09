@@ -1,4 +1,4 @@
-drop table dw.dt_date;
+drop table if exists dw.dt_date;
 
 create table dw.dt_date (
 date_key int not null,
