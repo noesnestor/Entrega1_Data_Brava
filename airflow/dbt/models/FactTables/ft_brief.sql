@@ -88,7 +88,7 @@ opcionesrespuesta_pregunta as
 respuesta_usuario as
 /* Joinear la tabla respuesta con la tabla de usuario, esto obtiene empresa, rol y encuesta, con la última id siendo la que utilizaremos para el último join*/
 (
-    select res.id_respuesta, res.texto_respuesta, res.fecha, us.id_encuesta, us.id_usuario, us.id_empresa, us.id_rol
+    select res.id_pregunta, res.id_respuesta, res.texto_respuesta, res.fecha, us.id_encuesta, us.id_usuario, us.id_empresa, us.id_rol
     from respuesta as res
     inner join usuario as us
     on res.id_usuario = us.id_usuario
@@ -106,10 +106,11 @@ respuesta_usuario_encuesta as
 respuesta_usuario_encuesta_opcionesrespuesta_pregunta as
 /* Joinear la primera tabla con la tercera en pos de tener una tabla con todos los datos */
 (
-    select r_u_e.*, o_p.id_opcionesrespuesta, o_p.id_pregunta, o_p.id_tipo_pregunta
+    select r_u_e.*, o_p.id_opcionesrespuesta, o_p.id_tipo_pregunta
     from respuesta_usuario_encuesta as r_u_e
     inner join opcionesrespuesta_pregunta as o_p
     on r_u_e.id_encuesta = o_p.id_encuesta
+    and r_u_e.id_pregunta = o_p.id_pregunta
 ),
 
 /* hacer que se seleccione únicamente las id que correspondan al tipo_encuesta "brief" */
