@@ -81,7 +81,7 @@ opcionesrespuesta_pregunta as
 (
     select o_r.id_opcionesrespuesta, pre.id_pregunta, pre.id_tipo_pregunta, pre.id_encuesta
     from opcionesrespuesta as o_r
-    inner join pregunta as pre
+    right outer join pregunta as pre
     on o_r.id_pregunta = pre.id_pregunta
 ),
 
